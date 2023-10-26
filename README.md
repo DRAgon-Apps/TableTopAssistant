@@ -1,7 +1,7 @@
 Original App Design Project - README
 ===
 
-# TTA (TableTop Assisntant)
+# TTA (TableTop Assistant)
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ Original App Design Project - README
 
 ### Description
 
-TTA (TableTop Assisntant) is an app designed to accompany users while they play boardgames and helps them with multiple features that players might need during a boardgame such as timers, dice rolls, score tracking, etc.
+TTA (TableTop Assistant) is an app designed to accompany users while they play boardgames and helps them with multiple features that players might need during a boardgame such as timers, dice rolls, score tracking, etc.
 
 ### App Evaluation
 
