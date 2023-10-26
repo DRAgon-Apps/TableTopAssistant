@@ -63,16 +63,16 @@ BoardBuddy(Temp) is an app designed to accompany users while they play boardgame
 **Flow Navigation** (Screen to Screen)
 
 * Menu Screen
-=> Dice Roll Screen
-=> Timer Screen
-=> Score Screen
-=> Wheel Screen
+    * => Dice Roll Screen
+    * => Timer Screen
+    * => Score Screen
+    * => Wheel Screen
 * Dice Roll Screen
-=> Menu Screen
+    * => Menu Screen
 * Score Screen
-=> Menu Screen
+    * => Menu Screen
 * Wheel Screen
-=> Menu Screen
+    * => Menu Screen
 
 
 
