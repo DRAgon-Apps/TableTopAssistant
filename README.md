@@ -1,7 +1,7 @@
 Original App Design Project - README
 ===
 
-# BoardBuddies(Temp)
+# BoardBuddy(Temp)
 
 ## Table of Contents
 
@@ -32,6 +32,7 @@ BoardBuddy(Temp) is an app designed to accompany users while they play boardgame
 
 **Required Must-have Stories**
 
+* User can see a menu with buttons leading to the features
 * User must be able to number of dice and how many sides to roll
 * User must be able to set up a timer
 * User must be able to keep track of score
@@ -45,38 +46,41 @@ BoardBuddy(Temp) is an app designed to accompany users while they play boardgame
 
 ### 2. Screen Archetypes
 
-- [ ] [list first screen here]
-* [list associated required story here]
-* ...
-list second screen here]
-* [list associated required story here]
-* ...
+* Menu Screen
+    * User can see a menu with buttons leading to the features
+* Dice Roll Screen
+    * User must be able to number of dice and how many sides to roll
+* Timer Screen
+    * User must be able to set up a timer
+* Score Screen
+    * User must be able to set up a timer
+* Wheel Screen
+    * User must be able to create a wheel and get an item chosen at random
+
 
 ### 3. Navigation
 
-**Tab Navigation** (Tab to Screen)
-
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
-
 **Flow Navigation** (Screen to Screen)
 
-- [ ] [list first screen here]
-* [list screen navigation here]
-* ...
-- [ ] [list second screen here]
-* [list screen navigation here]
-* ...
+* Menu Screen
+=> Dice Roll Screen
+=> Timer Screen
+=> Score Screen
+=> Wheel Screen
+* Dice Roll Screen
+=> Menu Screen
+* Score Screen
+=> Menu Screen
+* Wheel Screen
+=> Menu Screen
+
+
 
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
 
 ## Schema 
 
