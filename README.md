@@ -78,8 +78,7 @@ TTA (TableTop Assistant) is an app designed to accompany users while they play b
 
 ## Wireframes
 
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![TTA Wireframe](https://github.com/DRAgon-Apps/TableTopAssistant/assets/112513368/856f1a29-dc09-4413-9bb9-c70296a1b2bb)
 
 
 ## Schema 
