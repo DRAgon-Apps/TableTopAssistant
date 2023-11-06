@@ -16,6 +16,11 @@
 		722916862AF88C6100F98D00 /* TableTopAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916852AF88C6100F98D00 /* TableTopAssistantTests.swift */; };
 		722916902AF88C6100F98D00 /* TableTopAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7229168F2AF88C6100F98D00 /* TableTopAssistantUITests.swift */; };
 		722916922AF88C6100F98D00 /* TableTopAssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916912AF88C6100F98D00 /* TableTopAssistantUITestsLaunchTests.swift */; };
+		722916A62AF8940C00F98D00 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916A52AF8940C00F98D00 /* MainMenuViewController.swift */; };
+		722916A82AF8951900F98D00 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916A72AF8951900F98D00 /* DiceViewController.swift */; };
+		722916AA2AF8952B00F98D00 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916A92AF8952B00F98D00 /* WheelViewController.swift */; };
+		722916AC2AF8953800F98D00 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916AB2AF8953800F98D00 /* TimerViewController.swift */; };
+		722916AE2AF8954500F98D00 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916AD2AF8954500F98D00 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		7229168B2AF88C6100F98D00 /* TableTopAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableTopAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7229168F2AF88C6100F98D00 /* TableTopAssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTopAssistantUITests.swift; sourceTree = "<group>"; };
 		722916912AF88C6100F98D00 /* TableTopAssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTopAssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		722916A52AF8940C00F98D00 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		722916A72AF8951900F98D00 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		722916A92AF8952B00F98D00 /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
+		722916AB2AF8953800F98D00 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		722916AD2AF8954500F98D00 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 		7229166D2AF88C5E00F98D00 /* TableTopAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				722916A42AF893DC00F98D00 /* Score */,
+				722916A32AF893D000F98D00 /* Timer */,
+				722916A22AF893C800F98D00 /* Wheel */,
+				722916A12AF893C200F98D00 /* Dice */,
+				722916A02AF8938000F98D00 /* Main Menu */,
 				7229166E2AF88C5E00F98D00 /* AppDelegate.swift */,
 				722916702AF88C5E00F98D00 /* SceneDelegate.swift */,
 				722916722AF88C5E00F98D00 /* ViewController.swift */,
@@ -125,6 +140,46 @@
 				722916912AF88C6100F98D00 /* TableTopAssistantUITestsLaunchTests.swift */,
 			);
 			path = TableTopAssistantUITests;
+			sourceTree = "<group>";
+		};
+		722916A02AF8938000F98D00 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				722916A52AF8940C00F98D00 /* MainMenuViewController.swift */,
+			);
+			path = "Main Menu";
+			sourceTree = "<group>";
+		};
+		722916A12AF893C200F98D00 /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				722916A72AF8951900F98D00 /* DiceViewController.swift */,
+			);
+			path = Dice;
+			sourceTree = "<group>";
+		};
+		722916A22AF893C800F98D00 /* Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				722916A92AF8952B00F98D00 /* WheelViewController.swift */,
+			);
+			path = Wheel;
+			sourceTree = "<group>";
+		};
+		722916A32AF893D000F98D00 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				722916AB2AF8953800F98D00 /* TimerViewController.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		722916A42AF893DC00F98D00 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				722916AD2AF8954500F98D00 /* ScoreViewController.swift */,
+			);
+			path = Score;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722916A62AF8940C00F98D00 /* MainMenuViewController.swift in Sources */,
+				722916A82AF8951900F98D00 /* DiceViewController.swift in Sources */,
+				722916AA2AF8952B00F98D00 /* WheelViewController.swift in Sources */,
+				722916AC2AF8953800F98D00 /* TimerViewController.swift in Sources */,
 				722916732AF88C5E00F98D00 /* ViewController.swift in Sources */,
 				7229166F2AF88C5E00F98D00 /* AppDelegate.swift in Sources */,
 				722916712AF88C5E00F98D00 /* SceneDelegate.swift in Sources */,
+				722916AE2AF8954500F98D00 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

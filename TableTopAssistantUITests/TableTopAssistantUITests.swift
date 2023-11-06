@@ -2,7 +2,7 @@
 //  TableTopAssistantUITests.swift
 //  TableTopAssistantUITests
 //
-//  Created by user246620 on 11/5/23.
+//  Created by Reinaldo Demori on 11/5/23.
 //
 
 import XCTest
