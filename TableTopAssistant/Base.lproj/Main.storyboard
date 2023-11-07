@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pPY-ND-ZeD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pPY-ND-ZeD">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,136 +43,77 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="aNQ-Wb-8RI">
-                                <rect key="frame" x="32" y="307" width="328" height="328"/>
+                                <rect key="frame" x="32" y="263" width="328" height="328"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="XTZ-dk-PoH">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="150"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJe-wk-DTP" userLabel="Dice View">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85E-qY-HJ3">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lbw-6I-UGe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="114"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAU-Ak-xru">
-                                                        <rect key="frame" x="58" y="121" width="35" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.87058823529411766" green="0.68632675798949871" blue="0.2541804560544062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="CBt-NR-551"/>
-                                                    <constraint firstAttribute="height" constant="150" id="jfS-CA-VuE"/>
+                                                    <constraint firstAttribute="width" constant="150" id="ha3-cc-NRA"/>
+                                                    <constraint firstAttribute="height" constant="150" id="zXf-sV-UEs"/>
                                                 </constraints>
+                                                <color key="tintColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="dice.fill" catalog="system" title="Dice">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="K6Q-aF-BNW" appends="YES" id="z9l-TT-0cn"/>
+                                                    <segue destination="9q2-6i-wrk" kind="show" identifier="diceSegue" id="gWn-qC-XiX"/>
                                                 </connections>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX4-pm-dqQ" userLabel="Wheel View">
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPt-0I-TtR">
                                                 <rect key="frame" x="178" y="0.0" width="150" height="150"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vd3-x4-Xys">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="114"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wheel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BY-4N-IPV">
-                                                        <rect key="frame" x="54" y="122" width="49" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="DBd-6C-nXK"/>
-                                                    <constraint firstAttribute="height" constant="150" id="bEx-JT-MLJ"/>
+                                                    <constraint firstAttribute="height" constant="150" id="bix-ro-c82"/>
+                                                    <constraint firstAttribute="width" constant="150" id="hjz-e3-qBM"/>
                                                 </constraints>
+                                                <color key="tintColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="chart.pie.fill" catalog="system" title="Wheel">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="vSj-2x-VSb" appends="YES" id="tAj-Z8-yQr"/>
+                                                    <segue destination="BYq-zz-NKX" kind="show" identifier="wheelSegue" id="Fee-mI-z3O"/>
                                                 </connections>
-                                            </view>
+                                            </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="KJe-wk-DTP" firstAttribute="leading" secondItem="XTZ-dk-PoH" secondAttribute="leading" id="87e-UK-Kq7"/>
-                                            <constraint firstAttribute="bottom" secondItem="zX4-pm-dqQ" secondAttribute="bottom" id="NQU-nU-V4l"/>
-                                            <constraint firstAttribute="height" constant="150" id="Rqa-Zi-0Ij"/>
-                                            <constraint firstItem="KJe-wk-DTP" firstAttribute="top" secondItem="XTZ-dk-PoH" secondAttribute="top" id="gdc-aT-d7S"/>
-                                            <constraint firstAttribute="bottom" secondItem="KJe-wk-DTP" secondAttribute="bottom" id="hM7-RH-bAU"/>
-                                            <constraint firstAttribute="trailing" secondItem="zX4-pm-dqQ" secondAttribute="trailing" id="jz0-5a-Byf"/>
-                                            <constraint firstItem="zX4-pm-dqQ" firstAttribute="top" secondItem="XTZ-dk-PoH" secondAttribute="top" id="xEo-wf-SLE"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="uwf-fF-3BR">
                                         <rect key="frame" x="0.0" y="178" width="328" height="150"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3D8-gb-4i9" userLabel="Score View">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUN-LV-Y9b">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-rW-dpf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="114"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyW-IC-SHI">
-                                                        <rect key="frame" x="54" y="121" width="45" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="FIN-o8-Cht"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="b3l-7Z-WWb"/>
-                                                    <constraint firstAttribute="height" constant="150" id="gAN-2S-WOZ"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="hLQ-t4-Ikx"/>
+                                                    <constraint firstAttribute="height" constant="150" id="3ON-NG-lZa"/>
+                                                    <constraint firstAttribute="width" constant="150" id="Jpw-WM-bfc"/>
                                                 </constraints>
+                                                <color key="tintColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="sportscourt.fill" catalog="system" title="Score">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="NYL-wb-1Wa" appends="YES" id="tIJ-gg-nLz"/>
+                                                    <segue destination="Mcr-5J-SPm" kind="show" identifier="scoreSegue" id="Upl-le-hkL"/>
                                                 </connections>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nl3-Zd-D5g" userLabel="Timer View">
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR5-oO-cLS">
                                                 <rect key="frame" x="178" y="0.0" width="150" height="150"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-L5-2Yw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="114"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-p6-gBJ">
-                                                        <rect key="frame" x="54" y="121" width="44" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <gestureRecognizers/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="jgD-iB-4wD"/>
-                                                    <constraint firstAttribute="width" constant="150" id="yjm-pL-XK5"/>
+                                                    <constraint firstAttribute="width" constant="150" id="YzD-pQ-Gql"/>
+                                                    <constraint firstAttribute="height" constant="150" id="cA2-ar-rtW"/>
                                                 </constraints>
+                                                <color key="tintColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="clock.fill" catalog="system" title="Timer">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="xTQ-If-7GF" appends="YES" id="zT2-iC-KRP"/>
+                                                    <segue destination="ps9-dH-gEq" kind="show" identifier="timerSegue" id="uK7-nA-NQA"/>
                                                 </connections>
-                                            </view>
+                                            </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Nl3-Zd-D5g" secondAttribute="bottom" id="EPh-qb-Z6R"/>
-                                            <constraint firstItem="3D8-gb-4i9" firstAttribute="top" secondItem="uwf-fF-3BR" secondAttribute="top" id="KSw-YD-r1H"/>
-                                            <constraint firstItem="Nl3-Zd-D5g" firstAttribute="top" secondItem="uwf-fF-3BR" secondAttribute="top" id="QJq-AL-XZF"/>
-                                            <constraint firstAttribute="trailing" secondItem="Nl3-Zd-D5g" secondAttribute="trailing" id="ZMR-fd-oZA"/>
-                                            <constraint firstAttribute="bottom" secondItem="3D8-gb-4i9" secondAttribute="bottom" id="jd7-DA-nzT"/>
-                                            <constraint firstItem="3D8-gb-4i9" firstAttribute="leading" secondItem="uwf-fF-3BR" secondAttribute="leading" id="qJQ-3N-qv6"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -184,7 +126,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table Top Assistant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7v-fK-QT8">
-                                <rect key="frame" x="14" y="185" width="364" height="36"/>
+                                <rect key="frame" x="14" y="141" width="364" height="36"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -198,39 +140,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aNQ-Wb-8RI" secondAttribute="bottom" constant="227" id="GBw-gs-8nX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aNQ-Wb-8RI" secondAttribute="trailing" constant="33" id="GQQ-QS-wqC"/>
                             <constraint firstItem="aNQ-Wb-8RI" firstAttribute="top" secondItem="u7v-fK-QT8" secondAttribute="bottom" constant="86" id="T0N-94-lhk"/>
-                            <constraint firstItem="u7v-fK-QT8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="dcv-4Q-aTc"/>
                             <constraint firstItem="aNQ-Wb-8RI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="rDO-2F-1XL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Pd-Ij-GbS"/>
-                    <connections>
-                        <segue destination="9q2-6i-wrk" kind="show" identifier="diceSugue" id="1OV-a3-h2J"/>
-                        <segue destination="BYq-zz-NKX" kind="show" identifier="wheelSegue" id="uiN-Ty-c4W"/>
-                        <segue destination="Mcr-5J-SPm" kind="show" identifier="scoreSegue" id="kZN-QV-lb7"/>
-                        <segue destination="ps9-dH-gEq" kind="show" identifier="timerSegue" id="Kja-9I-V2v"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="K6Q-aF-BNW">
-                    <connections>
-                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="zce-5e-6FX"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="vSj-2x-VSb">
-                    <connections>
-                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="BQu-ds-gBM"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="NYL-wb-1Wa">
-                    <connections>
-                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="Yhf-P5-UXJ"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="xTQ-If-7GF">
-                    <connections>
-                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="Edv-0b-VaB"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="930.53435114503816" y="4.2253521126760569"/>
         </scene>
@@ -329,6 +244,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chart.pie.fill" catalog="system" width="128" height="123"/>
+        <image name="clock.fill" catalog="system" width="128" height="123"/>
+        <image name="dice.fill" catalog="system" width="128" height="116"/>
+        <image name="sportscourt.fill" catalog="system" width="128" height="83"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
