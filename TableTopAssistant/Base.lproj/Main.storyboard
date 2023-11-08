@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -225,18 +225,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wheel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGE-lw-Nc9">
-                                <rect key="frame" x="175" y="335" width="49" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="tod-Ai-hui">
+                                <rect key="frame" x="16" y="135" width="361" height="651"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" restorationIdentifier="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="qYk-vd-Pl3" customClass="UIWheel">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="443"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-47-Ipo">
+                                        <rect key="frame" x="52.666666666666686" y="510.99999999999994" width="256" height="34.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTT-Ef-YZg">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                                <connections>
+                                                    <action selector="addSegmentButtonTapped:" destination="BYq-zz-NKX" eventType="touchUpInside" id="bAg-8U-WKb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwh-ue-HoI">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="73.333333333333343" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                                <connections>
+                                                    <action selector="deleteSegmentButtonTapped:" destination="BYq-zz-NKX" eventType="touchUpInside" id="c4S-q2-c8S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZI-kH-Ak5">
+                                                <rect key="frame" x="182.66666666666669" y="0.0" width="73.333333333333314" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clearWheelButtonTapped:" destination="BYq-zz-NKX" eventType="touchUpInside" id="Vqu-8n-fF8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-4j-Cwa">
+                                        <rect key="frame" x="150" y="613.33333333333337" width="61.333333333333343" height="37.666666666666629"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SPIN"/>
+                                        <connections>
+                                            <action selector="spinWheelButtonTapped:" destination="BYq-zz-NKX" eventType="touchUpInside" id="WUm-9q-dU6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uvh-qm-aKA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tod-Ai-hui" firstAttribute="top" secondItem="Uvh-qm-aKA" secondAttribute="top" constant="32" id="BMf-EE-yi4"/>
+                            <constraint firstItem="Uvh-qm-aKA" firstAttribute="trailing" secondItem="tod-Ai-hui" secondAttribute="trailing" constant="16" id="IHd-ov-pBE"/>
+                            <constraint firstItem="tod-Ai-hui" firstAttribute="leading" secondItem="f2v-ML-kHo" secondAttribute="leading" constant="16" id="YbT-cr-kft"/>
+                            <constraint firstItem="Uvh-qm-aKA" firstAttribute="bottom" secondItem="tod-Ai-hui" secondAttribute="bottom" constant="32" id="bdx-uR-EXF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XH0-Fy-ISz"/>
+                    <connections>
+                        <outlet property="addSegmentButton" destination="wTT-Ef-YZg" id="T5R-mI-xkv"/>
+                        <outlet property="clearWheelButton" destination="iZI-kH-Ak5" id="CPg-Dt-SkO"/>
+                        <outlet property="deleteSegmentButton" destination="Jwh-ue-HoI" id="gdb-iR-eLO"/>
+                        <outlet property="spinWheelButton" destination="UcZ-4j-Cwa" id="Qof-lf-34A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJ1-dd-r4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
