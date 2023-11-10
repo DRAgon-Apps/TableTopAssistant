@@ -9,6 +9,9 @@ import UIKit
 
 class TimerViewController: UIViewController {
 
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var timeTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

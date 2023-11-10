@@ -89,8 +89,8 @@ https://www.youtube.com/watch?v=Sm2dxflmWG0
 
 ### Dice Demo
 
-
-
+[
+](https://www.youtube.com/watch?v=DaGmUtXw6Mk)https://www.youtube.com/watch?v=DaGmUtXw6Mk
 ### Timer and Score Demo
 
 
