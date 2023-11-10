@@ -8,7 +8,7 @@ Original App Design Project - README
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
-4. [Schema](#Schema)
+4. [Video Demos](#Video-Demos)
 
 ## Overview
 
@@ -81,16 +81,16 @@ TTA (TableTop Assistant) is an app designed to accompany users while they play b
 ![TTA Wireframe](https://github.com/DRAgon-Apps/TableTopAssistant/assets/112513368/856f1a29-dc09-4413-9bb9-c70296a1b2bb)
 
 
-## Schema 
+## Video Demos
 
-[This section will be completed in Unit 9]
+### Wheel Demo
 
-### Models
+https://www.youtube.com/watch?v=Sm2dxflmWG0
 
-[Add table of models]
+### Dice Demo
 
-### Networking
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+### Timer and Score Demo
+
+
