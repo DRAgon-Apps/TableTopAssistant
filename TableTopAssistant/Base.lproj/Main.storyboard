@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -316,40 +316,48 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" restorationIdentifier="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="qYk-vd-Pl3" customClass="UIWheel">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="443"/>
+
                                         <color key="backgroundColor" red="0.51741200519999997" green="0.23057617850000001" blue="0.70103092779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-47-Ipo">
                                         <rect key="frame" x="52.666666666666686" y="510.99999999999994" width="256" height="34.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTT-Ef-YZg">
                                                 <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="34.333333333333336"/>
+
                                                 <color key="tintColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Add">
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+
                                                 <connections>
                                                     <action selector="addSegmentButtonTapped:" destination="BYq-zz-NKX" eventType="touchUpInside" id="bAg-8U-WKb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwh-ue-HoI">
                                                 <rect key="frame" x="91.333333333333343" y="0.0" width="73.333333333333343" height="34.333333333333336"/>
+
                                                 <color key="tintColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Delete">
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+
                                                 <connections>
                                                     <action selector="deleteSegmentButtonTapped:" destination="BYq-zz-NKX" eventType="touchUpInside" id="c4S-q2-c8S"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZI-kH-Ak5">
                                                 <rect key="frame" x="182.66666666666669" y="0.0" width="73.333333333333314" height="34.333333333333336"/>
+
                                                 <color key="tintColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Clear">
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+
                                                 <connections>
                                                     <action selector="clearWheelButtonTapped:" destination="BYq-zz-NKX" eventType="touchUpInside" id="Vqu-8n-fF8"/>
                                                 </connections>
@@ -358,11 +366,13 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-4j-Cwa">
                                         <rect key="frame" x="150" y="613.33333333333337" width="61.333333333333343" height="37.666666666666629"/>
+
                                         <color key="tintColor" red="0.87058823529999996" green="0.68632675799999998" blue="0.25418045610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="SPIN">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+
                                         <connections>
                                             <action selector="spinWheelButtonTapped:" destination="BYq-zz-NKX" eventType="touchUpInside" id="WUm-9q-dU6"/>
                                         </connections>
@@ -371,7 +381,9 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uvh-qm-aKA"/>
+
                         <color key="backgroundColor" red="0.51741200519999997" green="0.23057617850000001" blue="0.70103092779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+
                         <constraints>
                             <constraint firstItem="tod-Ai-hui" firstAttribute="top" secondItem="Uvh-qm-aKA" secondAttribute="top" constant="32" id="BMf-EE-yi4"/>
                             <constraint firstItem="Uvh-qm-aKA" firstAttribute="trailing" secondItem="tod-Ai-hui" secondAttribute="trailing" constant="16" id="IHd-ov-pBE"/>
