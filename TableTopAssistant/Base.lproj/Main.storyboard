@@ -177,6 +177,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="START">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="startTimer:" destination="ps9-dH-gEq" eventType="touchUpInside" id="GdZ-mF-Dqb"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQS-SA-Q5G">
                                 <rect key="frame" x="139" y="397" width="114" height="59"/>
@@ -186,6 +189,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="RESET">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetTimer:" destination="ps9-dH-gEq" eventType="touchUpInside" id="lJ2-q1-yPc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D7j-v2-RBg"/>
