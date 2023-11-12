@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1865247F2AFB26F4003CD43D /* UIWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865247E2AFB26F4003CD43D /* UIWheel.swift */; };
 		47CCEA0F2B008B1300CCCC22 /* TimeConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CCEA0E2B008B1200CCCC22 /* TimeConversions.swift */; };
+		47CCEA112B00AAE200CCCC22 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CCEA102B00AAE200CCCC22 /* Alerts.swift */; };
 		7229166F2AF88C5E00F98D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7229166E2AF88C5E00F98D00 /* AppDelegate.swift */; };
 		722916712AF88C5E00F98D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916702AF88C5E00F98D00 /* SceneDelegate.swift */; };
 		722916732AF88C5E00F98D00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722916722AF88C5E00F98D00 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		1865247E2AFB26F4003CD43D /* UIWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWheel.swift; sourceTree = "<group>"; };
 		47CCEA0E2B008B1200CCCC22 /* TimeConversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConversions.swift; sourceTree = "<group>"; };
+		47CCEA102B00AAE200CCCC22 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		7229166B2AF88C5E00F98D00 /* TableTopAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTopAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7229166E2AF88C5E00F98D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		722916702AF88C5E00F98D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				722916AB2AF8953800F98D00 /* TimerViewController.swift */,
+				47CCEA102B00AAE200CCCC22 /* Alerts.swift */,
 				47CCEA0E2B008B1200CCCC22 /* TimeConversions.swift */,
 			);
 			path = Timer;
@@ -328,6 +331,7 @@
 				7229166F2AF88C5E00F98D00 /* AppDelegate.swift in Sources */,
 				722916712AF88C5E00F98D00 /* SceneDelegate.swift in Sources */,
 				1865247F2AFB26F4003CD43D /* UIWheel.swift in Sources */,
+				47CCEA112B00AAE200CCCC22 /* Alerts.swift in Sources */,
 				722916AE2AF8954500F98D00 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
