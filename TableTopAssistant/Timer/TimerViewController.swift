@@ -41,11 +41,25 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func resetTimer(_ sender: UIButton) {
+        reset()
+    }
+    
+    func reset() {
+        timer.invalidate()
+                
+        seconds = 0
+        timeTextView.text = "00:00:00"
+        resetButton.isHidden = true
+        timeTextView.isEditable = true
     }
     
     @objc func count() {
         seconds -= 1
         timeTextView.text = secondsToTime(for: seconds)
+        
+        if timeTextView.text == "24:00:00"{
+            reset()
+        }
     }
     
 }
