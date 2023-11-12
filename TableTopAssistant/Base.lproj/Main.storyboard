@@ -220,17 +220,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="00:00:00" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SPZ-uW-3Ay">
-                                <rect key="frame" x="35" y="174" width="322" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="00:00:00" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SPZ-uW-3Ay">
+                                <rect key="frame" x="35.666666666666657" y="174" width="322" height="107"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="8fF-73-RIi"/>
+                                    <constraint firstAttribute="width" secondItem="SPZ-uW-3Ay" secondAttribute="height" multiplier="322:107" id="H3P-K0-7Jc"/>
+                                    <constraint firstAttribute="height" constant="107" id="mbr-et-iuQ"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="70"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eE-Fv-i1t">
-                                <rect key="frame" x="139.66666666666666" y="309" width="114" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eE-Fv-i1t">
+                                <rect key="frame" x="139.66666666666666" y="309" width="114" height="34.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.329999999999998" id="EBz-6M-DiE"/>
+                                    <constraint firstAttribute="width" constant="114" id="ctx-pL-TX4"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START">
@@ -240,9 +247,8 @@
                                     <action selector="startTimer:" destination="ps9-dH-gEq" eventType="touchUpInside" id="GdZ-mF-Dqb"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQS-SA-Q5G">
-                                <rect key="frame" x="140" y="397" width="114" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQS-SA-Q5G">
+                                <rect key="frame" x="159" y="397" width="75" height="34.333333333333314"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="RESET">
@@ -255,6 +261,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D7j-v2-RBg"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="9eE-Fv-i1t" firstAttribute="centerX" secondItem="Hkx-gr-TRN" secondAttribute="centerX" id="02w-wU-t07"/>
+                            <constraint firstItem="9eE-Fv-i1t" firstAttribute="top" secondItem="SPZ-uW-3Ay" secondAttribute="bottom" constant="28" id="Qvq-Zw-Tqm"/>
+                            <constraint firstItem="cQS-SA-Q5G" firstAttribute="centerX" secondItem="Hkx-gr-TRN" secondAttribute="centerX" id="Uw7-zB-t7m"/>
+                            <constraint firstItem="SPZ-uW-3Ay" firstAttribute="centerX" secondItem="Hkx-gr-TRN" secondAttribute="centerX" id="aWj-K2-lzg"/>
+                            <constraint firstItem="cQS-SA-Q5G" firstAttribute="top" secondItem="9eE-Fv-i1t" secondAttribute="bottom" constant="53.670000000000002" id="h48-oy-JRy"/>
+                            <constraint firstItem="SPZ-uW-3Ay" firstAttribute="top" secondItem="D7j-v2-RBg" secondAttribute="top" constant="71" id="jmO-sV-OCy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="22D-WG-gSk"/>
                     <connections>
