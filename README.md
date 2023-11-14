@@ -33,7 +33,7 @@ TTA (TableTop Assistant) is an app designed to accompany users while they play b
 **Required Must-have Stories**
 
 - [x] User can see a menu with buttons leading to the features
-- [x] User must be able to number of dice and how many sides to roll
+- [x] User must be able to set the number of dice and how many sides it has to roll
 - [x] User must be able to set up a timer
 - [x] User must be able to keep track of score
 - [x] User must be able to create a wheel and get an item chosen at random
