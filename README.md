@@ -85,6 +85,10 @@ TTA (TableTop Assistant) is an app designed to accompany users while they play b
 
 ## Video Demos
 
+### Complete Demo
+
+https://www.youtube.com/watch?v=DaV0O4K3qCs
+
 ### Wheel Demo
 
 https://www.youtube.com/watch?v=Sm2dxflmWG0
